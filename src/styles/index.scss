@@ -1,0 +1,206 @@
+@import 'fonts';
+@import 'mixins';
+@import 'variables';
+
+// === COMMON ===
+body {
+    @include roboto
+}
+
+.section-outer {
+    border-bottom: 1px solid $color-devider;
+}
+
+.section-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: $vertical-padding;
+    padding-bottom: $vertical-padding;
+
+    &--wide {
+        max-width: 1200px;
+    }
+}
+
+.btn {
+    @include quicksand;
+    font-weight: $fw-bold;
+    font-size: $fs-sm;
+    text-decoration: none;
+    padding: $base*3 $base*4;
+    margin: 0;
+    border: 0;
+    background-color: none;
+    border-radius: 2px;
+    transition: $transition;
+
+    &--primary {
+        color: #3a79ff;
+        background-color: #d2e1ff;
+    
+        &:hover {
+            background-color: darken(#d2e1ff, 5%);
+        }
+    }
+}
+// === COMMON ===
+
+// === HEADER ==
+.section-header {
+    .section-inner{
+        padding-top: $vertical-padding-xs;
+        padding-bottom: $vertical-padding-xs;
+    }
+}
+
+.main-navigation {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: $base*6;
+    height: $base*6;
+    background-color: $color-secondary;
+    border-radius: 100%;
+}
+
+.nav {
+    margin-left: $base*18;
+}
+
+.nav-bar {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    &__item {
+        & + & {
+            margin-left: $base*10;
+        }
+
+        &-link {
+            @include quicksand;
+
+            font-size: $fs-sm;
+            font-weight: $fw-medium;
+            color:$color-primary;
+            text-decoration: none;
+            transition: $transition;
+
+            &:hover {
+                color: $color-secondary;
+            }
+        
+            &--active {
+                color: $color-secondary;
+                font-weight: $fw-bold;
+            }
+        }
+    }
+}
+
+.socials {
+    margin-left: auto;
+
+    &-bar {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        &__item {
+            & + & {
+                margin-left: $base*10;
+            }
+
+            &-link {
+                path{
+                    fill:$color-primary;
+                }
+                
+                &:hover {
+                    path{
+                        fill: $color-secondary;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.nav-btn {
+    margin-left: $base*10;
+}
+// === / HEADER ==
+
+// === HERO-IMAGE ==
+.section-hero-image {}
+// === / HERO-IMAGE ==
+
+// === CUSTOMERS ==
+.section-customers {
+    .section-inner{
+        padding-top: $vertical-padding-sm;
+        padding-bottom: $vertical-padding-sm;
+    }
+}
+// === / CUSTOMERS ==
+
+// === PLAN-AND-MANAGE ==
+.section-plan-and-manage {}
+// === / PLAN-AND-MANAGE ==
+
+// === FEATURES ==
+.section-features {}
+// === / FEATURES ==
+
+// === STATS ==
+.section-stats {
+    .section-inner{
+        padding-top: $vertical-padding-sm;
+        padding-bottom: $vertical-padding-sm;
+    }
+}
+// === / STATS ==
+
+// === BLOG ==
+.section-blog {}
+// === / BLOG ==
+
+// === QUOTES ==
+.section-quotes {}
+// === / QUOTES ==
+
+// === FAQ ==
+.section-faq {}
+// === / FAQ ==
+
+// === GET-STARTED ==
+.section-get-started {}
+// === / GET-STARTED ==
+
+// === NEWSLETTER ==
+.section-newsletter {}
+// === / NEWSLETTER ==
+
+// === FOOTER ==
+.section-footer {
+    border-bottom: 0;
+
+    .section-inner {
+        padding-top: $vertical-padding-sm;
+        padding-bottom: $vertical-padding-sm;
+    }
+
+    .copyright {
+        @include quicksand;
+
+        margin-top: $base*7;
+        margin-left: $base*24;
+        font-size: $fs-sm;
+        font-weight: $fw-medium;
+        color: #aeb8d0;
+    }
+}
+// === / FOOTER ==
