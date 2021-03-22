@@ -3,8 +3,13 @@ $fw-regular: 400;
 $fw-medium: 500;
 $fw-bold: 700;
 
-$fs-sm: 12px;
-$fs-md: 15px;
+$fs-xxs: 10px;
+$fs-xs: 12px;
+$fs-s: 15px;
+$fs-m: 18px;
+$fs-l: 24px;
+$fs-xl: 36px;
+$fs-xxl: 48px;
 
 $vertical-padding-xs: 20px;
 $vertical-padding-sm: 60px;
@@ -16,5 +21,6 @@ $transition: .2s;
 
 $color-devider: #d8e3fe;
 
+$color-white: #fff;
 $color-primary: #697ca6;
 $color-secondary: #5e81fe;
