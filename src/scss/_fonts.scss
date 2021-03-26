@@ -1,0 +1,16 @@
+@import 'mixins'; 
+
+@include font('Quicksand', 'Quicksand-Bold', '700', 'normal');
+@include font('Quicksand', 'Quicksand-Medium', '500', 'normal');
+@include font('Quicksand', 'Quicksand-Regular', '400', 'normal');
+@include font('Quicksand', 'Quicksand-Light', '300', 'normal');
+@include font('Roboto', 'Roboto-Medium', '500', 'normal');
+@include font('Roboto', 'Roboto-Regular', '400', 'normal');
+
+@mixin quicksand{
+    font-family: 'Quicksand', sans-serif;
+}
+
+@mixin roboto {
+    font-family: 'Roboto', sans-serif;
+}
